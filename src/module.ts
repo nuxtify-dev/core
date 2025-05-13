@@ -1,12 +1,12 @@
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import { addPlugin, createResolver, defineNuxtModule } from '@nuxt/kit'
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'my-module',
-    configKey: 'myModule',
+    name: 'nuxtify-core',
+    configKey: 'nuxtifyCore',
   },
   // Default configuration options of the Nuxt module
   defaults: {},
