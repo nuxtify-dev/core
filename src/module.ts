@@ -1,15 +1,62 @@
 import { addPlugin, createResolver, defineNuxtModule } from '@nuxt/kit'
 
-// Module options TypeScript interface definition
-export interface ModuleOptions {}
+// Types
+import type { ModuleOptions } from './types'
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: 'nuxtify-core',
     configKey: 'nuxtifyCore',
+    compatibility: {
+      nuxt: '>=3.16.0',
+      bridge: false,
+    },
   },
-  // Default configuration options of the Nuxt module
-  defaults: {},
+  defaults: {
+    // Brand
+    brand: {
+      name: 'nuxtify-core',
+      domain: '',
+      tagline: '',
+      logo: {
+        lightUrl: '',
+        darkUrl: '',
+        width: 200,
+        mobileWidth: 150,
+      },
+    },
+
+    // Policies
+    policies: {
+      privacyUrl: '/privacy',
+      termsUrl: '/terms',
+    },
+
+    // Announcement
+    announcement: {
+      show: false,
+      message: '',
+      buttonText: '',
+      buttonUrl: '',
+    },
+
+    // Credits
+    credits: {
+      creator: {
+        name: '',
+        domain: '',
+      },
+      prependText: '',
+      appendText: '',
+      showPoweredBy: true,
+    },
+
+    // Email
+    email: {
+      general: '',
+      support: '',
+    },
+  },
   setup(_options, _nuxt) {
     const resolver = createResolver(import.meta.url)
 
