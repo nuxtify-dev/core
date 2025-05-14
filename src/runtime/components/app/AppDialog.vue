@@ -28,7 +28,7 @@ const dialog = useDialog()
         </v-btn>
 
         <v-btn
-          :color="dialog.action.buttonColor"
+          :color="dialog.action.buttonColor || 'secondary'"
           variant="flat"
           @click="dialog.action.function"
         >

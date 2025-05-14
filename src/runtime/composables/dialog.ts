@@ -6,7 +6,7 @@ export interface Dialog {
   title: string
   message: string
   action: {
-    function: (() => Promise<void>) | null
+    function: (() => Promise<void>) | (() => void) | null
     buttonText: string
     buttonColor: string
   }
@@ -19,7 +19,7 @@ export const dialogInitialState: Dialog = {
   message: '',
   action: {
     function: null,
-    buttonText: '',
+    buttonText: 'Confirm',
     buttonColor: '',
   },
   closeButtonText: 'Cancel',
