@@ -51,7 +51,7 @@ In short, Nuxtify helps you build faster, iterate smarter, and maintain consiste
 
 ## <a name="modules">🧩 Modules</a>
 
-### Nuxtify Core (this module)
+### [Nuxtify Core](https://github.com/nuxtify-dev/core) (this module)
 
 Provides the core functionality for Nuxtify, including:
 
@@ -67,7 +67,7 @@ Provides single and multi-page website building blocks so you can _ship weirdly 
 
 ## <a name="features">✨ Features</a>
 
-Nuxtify core builds on the amazing features of [Vue](https://vuejs.org/guide/introduction), [Nuxt](https://nuxt.com/docs/getting-started/introduction), and [Vuetify](https://vuetifyjs.com/en/introduction/why-vuetify/).
+Nuxtify Core builds on the amazing features of [Vue](https://vuejs.org/guide/introduction), [Nuxt](https://nuxt.com/docs/getting-started/introduction), and [Vuetify](https://vuetifyjs.com/en/introduction/why-vuetify/).
 
 ### 💡 Intuitive UI & UX
 
