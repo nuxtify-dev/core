@@ -10,7 +10,9 @@
 [![Nuxtify Docs][nuxtify-src]][nuxtify-href] -->
 <!-- [🏀 Online playground](https://stackblitz.com/github/nuxtify-dev/core?file=playground%2Fapp.vue) -->
 
-> [!NOTE] > **Early Access Preview:**
+> [!NOTE]
+>
+> **Early Access Preview:**
 > This module is under active development. While it is already used to power a [handful of sites](https://nuxtify.dev/showcase) in production, expect things to change frequently. I will do my best to call out breaking changes in the [changelog](https://github.com/nuxtify-dev/core/blob/main/CHANGELOG.md).
 
 ### Table of Contents
