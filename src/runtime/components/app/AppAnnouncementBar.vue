@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useDisplay, computed, useNuxtifyConfig, isExternalUrl } from '#imports'
+import { computed, isExternalUrl, useDisplay, useNuxtifyConfig } from '#imports'
 
 // App state
 const nuxtifyConfig = useNuxtifyConfig()
