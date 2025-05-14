@@ -1,7 +1,9 @@
 {
-  "eslint.experimental.useFlatConfig": true,
+  "eslint.useFlatConfig": true,
   "cSpell.words": [
     "defu",
     "nuxtify"
-  ]
+  ],
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove"
 }
