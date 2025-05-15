@@ -7,13 +7,15 @@ import {
   installModule,
 } from '@nuxt/kit'
 import { defu } from 'defu'
+import { name, version } from '../package.json'
 
 // Types
 import type { ModuleOptions } from './types'
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'nuxtify-core',
+    name,
+    version,
     configKey: 'nuxtifyCore',
     compatibility: {
       nuxt: '>=3.16.0',
@@ -23,7 +25,7 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: {
     // Brand
     brand: {
-      name: 'nuxtify-core',
+      name: '@nuxtify/core',
       domain: '',
       tagline: '',
       logo: {

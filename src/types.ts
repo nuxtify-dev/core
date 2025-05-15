@@ -2,7 +2,7 @@ interface BrandOptions {
   /**
    * The name of the brand.
    *
-   * @default "nuxtify-core"
+   * @default "@nuxtify/core"
    */
   name?: string
   /**
