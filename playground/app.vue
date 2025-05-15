@@ -1,16 +1,16 @@
 <script setup lang="ts">
 import { useNuxtifyConfig, useServerSeoMeta } from '#imports'
 
-// Page info
-useServerSeoMeta({
-  title: '@nuxtify/core playground',
-  description: 'This is the @nuxtify/core playground.',
-})
-
 // App state
 const nuxtifyConfig = useNuxtifyConfig()
 const dialog = useDialog()
 const toast = useToast()
+
+// Page info
+useServerSeoMeta({
+  title: `${nuxtifyConfig.brand?.name} playground`,
+  description: 'This is the ${nuxtifyConfig.brand?.name} playground.',
+})
 
 // Functions
 const clickDialog = () => {
@@ -43,7 +43,7 @@ const clickToast = () => {
       <v-container>
         <v-row>
           <v-col cols="12">
-            <h1>{{ nuxtifyConfig.brand?.name }}</h1>
+            <h1>{{ nuxtifyConfig.brand?.name }} playground</h1>
           </v-col>
         </v-row>
 

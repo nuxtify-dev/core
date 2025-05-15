@@ -1,3 +1,3 @@
 <template>
-  <div>playground logo override</div>
+  <div>This is the AppLogo override component</div>
 </template>

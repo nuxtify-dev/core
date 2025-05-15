@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-05-13',
   nuxtifyCore: {
     brand: {
-      name: '@nuxtify/core playground',
+      tagline: 'Catchy tagline',
     },
     announcement: {
       show: true,
