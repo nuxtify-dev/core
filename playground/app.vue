@@ -9,7 +9,7 @@ const toast = useToast()
 // Page info
 useServerSeoMeta({
   title: `${nuxtifyConfig.brand?.name} playground`,
-  description: 'This is the ${nuxtifyConfig.brand?.name} playground.',
+  description: `This is the ${nuxtifyConfig.brand?.name} playground.`,
 })
 
 // Functions
@@ -57,7 +57,7 @@ const clickToast = () => {
           </v-col>
         </v-row>
 
-        <!-- App Dialog -->
+        <!-- App dialog -->
         <v-row>
           <v-col cols="12">
             <v-card class="pa-4">
@@ -72,7 +72,7 @@ const clickToast = () => {
           </v-col>
         </v-row>
 
-        <!-- App Toast -->
+        <!-- App toast -->
         <v-row>
           <v-col cols="12">
             <v-card class="pa-4">
@@ -97,7 +97,7 @@ const clickToast = () => {
           </v-col>
         </v-row>
 
-        <!-- Logo override -->
+        <!-- App logo override -->
         <v-row>
           <v-col cols="12">
             <v-card class="pa-4">
