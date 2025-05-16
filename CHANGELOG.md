@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.2] - 2025-05-16
+
+- feat(dx): add verbose logging config
+- revert: fix(types): don't explicitly type nuxtifyConfig
+
 ## [0.1.1] - 2025-05-16
 
 - feat: add submit to API helper function
