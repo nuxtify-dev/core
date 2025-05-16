@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   compatibilityDate: '2025-05-13',
   nuxtifyCore: {
+    verboseLogs: true,
     brand: {
       tagline: 'Catchy tagline',
     },

@@ -55,6 +55,11 @@ interface PoliciesOptions {
 
 export interface ModuleOptions {
   /**
+   * Verbose logging
+   */
+  verboseLogs?: boolean
+
+  /**
    * Brand options
    */
   brand?: BrandOptions
