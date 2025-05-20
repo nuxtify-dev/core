@@ -125,8 +125,8 @@ export default defineNuxtModule<ModuleOptions>({
 
     // Middleware
     addRouteMiddleware({
-      name: 'setup-global',
-      path: resolver.resolve('./runtime/middleware/setup.global.ts'),
+      name: 'setup',
+      path: resolver.resolve('./runtime/middleware/setup.ts'),
       global: true,
     })
   },
