@@ -213,3 +213,46 @@ export const getLanguageName = (
     return languageCode // Fallback to the input code if an error occurs
   }
 }
+
+/**
+ * Determines the correct indefinite article ("a" or "an") for a given string
+ * and optionally prepends it to the string.
+ *
+ * @param text The input string for which to determine the article.
+ * @param includeText If true (default), returns the article followed by the original text (e.g., "an apple").
+ * If false, returns only the article (e.g., "an").
+ * @returns The determined article, optionally with the original text, or an empty string
+ * if the input text is empty and includeText is false, or the original text if empty and includeText is true.
+ */
+export function addArticle(
+  text: string | undefined,
+  includeText = true,
+): string {
+  // Handle empty string case first
+  if (!text) return ''
+
+  const firstLetter = text[0].toLowerCase()
+  // Extended list of vowels for basic check.
+  // Does not handle phonetic exceptions like "hour" (needs "an") or "university" (needs "a").
+  const vowels: string[] = ['a', 'e', 'i', 'o', 'u']
+  let article: string
+
+  if (vowels.includes(firstLetter)) {
+    article = 'an'
+  }
+  else {
+    // A more complex check could be added here for numbers that sound like they start with a vowel,
+    // e.g., "8" (an eight), "11" (an eleven).
+    // For simplicity, this version treats numbers starting with '1', '8' etc., based on their first character's type.
+    // If the first char is a digit that isn't 'a,e,i,o,u', it gets 'a'.
+    // This is a common simplification.
+    article = 'a'
+  }
+
+  if (includeText) {
+    return `${article} ${text}`
+  }
+  else {
+    return article
+  }
+}
