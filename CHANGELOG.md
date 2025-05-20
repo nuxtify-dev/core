@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.4] - 2025-05-20
+
+- fix: maybe fix import error
+- revert: types: don't allow undefined objects
+
 ## [0.1.3] - 2025-05-20
 
 - ux: reset error message on page reload
