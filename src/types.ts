@@ -62,17 +62,17 @@ export interface ModuleOptions {
   /**
    * Brand options
    */
-  brand?: BrandOptions
+  brand: BrandOptions
 
   /**
    * Policies options
    */
-  policies?: PoliciesOptions
+  policies: PoliciesOptions
 
   /**
    * Announcement banner options
    */
-  announcement?: {
+  announcement: {
     show?: boolean
     message?: string
     buttonText?: string
@@ -82,8 +82,8 @@ export interface ModuleOptions {
   /**
    * Credits options
    */
-  credits?: {
-    creator?: {
+  credits: {
+    creator: {
       name?: string
       domain?: string
     }
@@ -95,7 +95,7 @@ export interface ModuleOptions {
   /**
    * Email options
    */
-  email?: {
+  email: {
     general?: string
     support?: string
   }
