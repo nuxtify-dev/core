@@ -1,6 +1,7 @@
 import {
   addComponentsDir,
   addImportsDir,
+  addRouteMiddleware,
   addServerImportsDir,
   createResolver,
   defineNuxtModule,
@@ -121,5 +122,12 @@ export default defineNuxtModule<ModuleOptions>({
     // Utils
     addImportsDir(resolver.resolve('./runtime/utils'))
     addServerImportsDir(resolver.resolve('./runtime/server/utils'))
+
+    // Middleware
+    addRouteMiddleware({
+      name: 'setup-global',
+      path: resolver.resolve('./runtime/middleware/setup.global.ts'),
+      global: true,
+    })
   },
 })
