@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.3] - 2025-05-20
+
+- ux: reset error message on page reload
+- types: don't allow undefined objects
+- chore(deps): update dev minors
+
 ## [0.1.2] - 2025-05-16
 
 - feat(dx): add verbose logging config
