@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.6] - 2025-05-21
+
+- feat: add navigation config
+- feat: add addArticle function
+
 ## [0.1.5] - 2025-05-20
 
 - fix: maybe fix import error
