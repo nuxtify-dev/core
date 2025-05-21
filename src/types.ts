@@ -1,3 +1,16 @@
+interface Link {
+  text: string
+  to?: string
+  href?: string
+  icon?: string
+  openInNew?: boolean
+}
+
+interface TitledLinks {
+  title: string
+  links: Link[]
+}
+
 interface BrandOptions {
   /**
    * The name of the brand.
@@ -77,6 +90,16 @@ export interface ModuleOptions {
     message?: string
     buttonText?: string
     buttonUrl?: string
+  }
+
+  /**
+   * Navigation options
+   */
+  navigation?: {
+    primary?: Link[]
+    secondary?: Link[]
+    altPrimary?: TitledLinks[]
+    altSecondary?: Link[]
   }
 
   /**

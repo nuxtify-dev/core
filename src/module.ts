@@ -54,6 +54,14 @@ export default defineNuxtModule<ModuleOptions>({
       buttonUrl: '',
     },
 
+    // Navigation
+    navigation: {
+      primary: [],
+      secondary: [],
+      altPrimary: [],
+      altSecondary: [],
+    },
+
     // Credits
     credits: {
       creator: {
