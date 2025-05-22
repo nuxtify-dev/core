@@ -110,7 +110,7 @@ export const formatPhone = (input: string, separator = '-') => {
   return phone
 }
 
-export function formatDate(date: string, locale = 'en-us') {
+export function formatDate(date: number | string | Date, locale = 'en-us') {
   return new Date(date).toLocaleDateString(locale, {
     year: 'numeric',
     month: 'long',
@@ -118,7 +118,7 @@ export function formatDate(date: string, locale = 'en-us') {
   })
 }
 
-export function formatDateTime(date: string, locale = 'en-us') {
+export function formatDateTime(date: number | string | Date, locale = 'en-us') {
   return new Date(date).toLocaleString(locale, {
     year: 'numeric',
     month: 'long',
