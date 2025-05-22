@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.7] - 2025-05-22
+
+- feat: export Link type
+- fix: allow all date types
+- dx: add type hints to math utils
+
 ## [0.1.6] - 2025-05-21
 
 - feat: add navigation config

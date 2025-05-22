@@ -1,6 +1,6 @@
 {
   "name": "@nuxtify/core",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Nuxtify core module powered by Nuxt and Vuetify.",
   "homepage": "https://nuxtify.dev",
   "author": "Nuxtify.dev <hello@nuxtify.dev>",
