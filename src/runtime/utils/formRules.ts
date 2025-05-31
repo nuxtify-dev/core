@@ -25,6 +25,10 @@ export const formRules = {
     v ? v.length <= 600 || 'Must not be longer than 600 characters' : true,
   maxLength1200: (v: string) =>
     v ? v.length <= 1200 || 'Must not be longer than 1200 characters' : true,
+  maxLength5000: (v: string) =>
+    v ? v.length <= 5000 || 'Must not be longer than 5000 characters' : true,
+  maxLength10000: (v: string) =>
+    v ? v.length <= 10000 || 'Must not be longer than 10,000 characters' : true,
 
   // Number
   isInteger: (v: string) => Number.isInteger(+v) || 'Must be an integer',
