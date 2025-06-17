@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.8] - 2025-06-17
+
+- dx!: revert "feat: export Link type"
+- feat: add useNuxtifySiteTitle composable
+- feat: add AppCredits component
+- feat: add utils functions
+- dx: update formatting rules
+- chore(deps): update packages
+
 ## [0.1.7] - 2025-05-22
 
 - feat: export Link type
