@@ -4,6 +4,8 @@
     "defu",
     "nuxtify"
   ],
-  "javascript.format.semicolons": "remove",
-  "typescript.format.semicolons": "remove"
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never"
+  },
 }
