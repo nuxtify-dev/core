@@ -86,6 +86,16 @@ const clickToast = () => {
           </v-col>
         </v-row>
 
+        <!-- App credits -->
+        <v-row>
+          <v-col cols="12">
+            <v-card class="pa-4">
+              <h2>AppCredits</h2>
+              <AppCredits :brand-opacity="0.8" />
+            </v-card>
+          </v-col>
+        </v-row>
+
         <!-- App loading -->
         <v-row>
           <v-col cols="12">
