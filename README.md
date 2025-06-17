@@ -67,6 +67,14 @@ Provides single and multi-page website building blocks so you can _ship weirdly 
 - Ready to use page components, page templates, and email subscribe form
 - (coming soon) Robots, sitemaps, schema.org, social share images, broken links, and more powered by [Nuxt SEO](https://nuxtseo.com/)
 
+### [Nuxtify App](https://github.com/nuxtify-dev/app)
+
+Provides a single page app (SPA) skeleton for building your next SaaS or AI tool.
+
+- Admin backend powered by [Firebase](https://firebase.google.com/) and [Vuefire](https://vuefire.vuejs.org/)
+- Sign in and sign up pages powered by [Firebase Authentication](https://firebase.google.com/products/auth)
+- User account page, app style navigation, and more...
+
 ## <a name="features">✨ Features</a>
 
 Nuxtify Core builds on the amazing features of [Vue](https://vuejs.org/guide/introduction), [Nuxt](https://nuxt.com/docs/getting-started/introduction), and [Vuetify](https://vuetifyjs.com/en/introduction/why-vuetify/).
