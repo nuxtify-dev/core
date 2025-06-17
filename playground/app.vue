@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import { useNuxtifyConfig, useServerSeoMeta } from '#imports'
-
 // App state
 const nuxtifyConfig = useNuxtifyConfig()
 const dialog = useDialog()
 const toast = useToast()
 
 // Page info
+useNuxtifySiteTitle()
 useServerSeoMeta({
   title: `${nuxtifyConfig.brand?.name} playground`,
   description: `This is the ${nuxtifyConfig.brand?.name} playground.`,
