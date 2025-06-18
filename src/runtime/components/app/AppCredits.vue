@@ -1,20 +1,12 @@
 <script setup lang="ts">
 import { useNuxtifyConfig } from '#imports'
 
-// Props
-defineProps({
-  brandOpacity: {
-    type: Number,
-    default: 1,
-  },
-})
-
 // App state
 const nuxtifyConfig = useNuxtifyConfig()
 </script>
 
 <template>
-  <div v-if="nuxtifyConfig.credits?.prependText || nuxtifyConfig.credits?.creator?.name || nuxtifyConfig.credits?.appendText || nuxtifyConfig.credits?.showPoweredBy">
+  <span v-if="nuxtifyConfig.credits?.prependText || nuxtifyConfig.credits?.creator?.name || nuxtifyConfig.credits?.appendText || nuxtifyConfig.credits?.showPoweredBy">
     <small>
       <!-- Prepend text -->
       <span
@@ -27,7 +19,6 @@ const nuxtifyConfig = useNuxtifyConfig()
       <span v-if="nuxtifyConfig.credits.creator?.name">
         <a
           v-if="nuxtifyConfig.credits.creator.domain"
-          id="brand-name"
           :href="`https://${nuxtifyConfig.credits.creator.domain}/?utm_source=${nuxtifyConfig.brand?.domain}&utm_medium=referral`"
           target="_blank"
           rel="noopener noreferrer"
@@ -51,7 +42,7 @@ const nuxtifyConfig = useNuxtifyConfig()
         >Powered by Nuxtify</a>.
       </span>
     </small>
-  </div>
+  </span>
 </template>
 
 <style scoped>
@@ -65,13 +56,5 @@ a {
 a:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
-}
-
-/* Brand name */
-#brand-name {
-  opacity: v-bind(brandOpacity);
-}
-#brand-name:hover {
-  opacity: 1;
 }
 </style>
