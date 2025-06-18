@@ -6,7 +6,7 @@ const nuxtifyConfig = useNuxtifyConfig()
 </script>
 
 <template>
-  <span v-if="nuxtifyConfig.credits?.prependText || nuxtifyConfig.credits?.creator?.name || nuxtifyConfig.credits?.appendText || nuxtifyConfig.credits?.showPoweredBy">
+  <div v-if="nuxtifyConfig.credits?.prependText || nuxtifyConfig.credits?.creator?.name || nuxtifyConfig.credits?.appendText || nuxtifyConfig.credits?.showPoweredBy">
     <small>
       <!-- Prepend text -->
       <span
@@ -42,7 +42,7 @@ const nuxtifyConfig = useNuxtifyConfig()
         >Powered by Nuxtify</a>.
       </span>
     </small>
-  </span>
+  </div>
 </template>
 
 <style scoped>
