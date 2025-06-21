@@ -3,6 +3,7 @@
 const nuxtifyConfig = useNuxtifyConfig()
 const dialog = useDialog()
 const toast = useToast()
+const errorMessage = useErrorMessage()
 
 // Page info
 useNuxtifySiteTitle()
@@ -10,6 +11,9 @@ useServerSeoMeta({
   title: `${nuxtifyConfig.brand?.name} playground`,
   description: `This is the ${nuxtifyConfig.brand?.name} playground.`,
 })
+
+// Component state
+errorMessage.value = 'This is an error message.'
 
 // Functions
 const clickDialog = () => {
@@ -102,6 +106,16 @@ const clickToast = () => {
             <v-card class="pa-4">
               <h2>AppLoading</h2>
               <AppLoading />
+            </v-card>
+          </v-col>
+        </v-row>
+
+        <!-- App error -->
+        <v-row>
+          <v-col cols="12">
+            <v-card class="pa-4">
+              <h2>AppError</h2>
+              <AppError />
             </v-card>
           </v-col>
         </v-row>
