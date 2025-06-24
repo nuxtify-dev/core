@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.9] - 2025-06-24
+
+- fix: rollup import error
+- feat: add AppError component
+- ui: simplify AppCredits component style
+- docs: add nuxtify app section
+
 ## [0.1.8] - 2025-06-17
 
 - dx!: revert "feat: export Link type"
