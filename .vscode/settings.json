@@ -2,7 +2,8 @@
   "eslint.useFlatConfig": true,
   "cSpell.words": [
     "defu",
-    "nuxtify"
+    "nuxtify",
+    "unhead"
   ],
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.codeActionsOnSave": {
