@@ -109,6 +109,9 @@ export default defineNuxtModule<ModuleOptions>({
           VFooter: {
             VBtn: { color: 'inherit' },
           },
+          VNumberInput: {
+            VBtn: { color: 'inherit', variant: 'inherit' },
+          },
         },
       },
     })
