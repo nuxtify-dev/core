@@ -6,6 +6,7 @@ import {
   createResolver,
   defineNuxtModule,
   installModule,
+  useLogger,
 } from '@nuxt/kit'
 import { defu } from 'defu'
 import { name, version } from '../package.json'
@@ -82,7 +83,7 @@ export default defineNuxtModule<ModuleOptions>({
   async setup(_options, _nuxt) {
     const resolver = createResolver(import.meta.url)
 
-    if (_options.verboseLogs) console.log('[nuxtify-core] Verbose logging enabled.')
+    if (_options.verboseLogs) useLogger('[nuxtify-core] Verbose logging enabled.')
 
     // Modules
     await installModule('vuetify-nuxt-module', {
