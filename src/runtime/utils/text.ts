@@ -110,12 +110,62 @@ export const formatPhone = (input: string, separator = '-') => {
   return phone
 }
 
-export function formatDate(date: number | string | Date, locale = 'en-us') {
-  return new Date(date).toLocaleDateString(locale, {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  })
+/**
+ * Formats a date or a date-time using the Intl.DateTimeFormat API.
+ *
+ * @param date The date to format (number, string, or Date).
+ * @param config Optional configuration object.
+ * @param config.type The format to use: 'date' (default) or 'datetime'.
+ * @param config.locale A string with a BCP 47 language tag (e.g., 'en-US').
+ * @param config.options Custom formatting options to override the default.
+ * @param config.defaultString The string to return if the date is invalid.
+ */
+export function formatDate(
+  date: number | string | Date,
+  {
+    type = 'date',
+    locale = 'en-US',
+    options,
+    defaultString = '-',
+  }: {
+    type?: 'date' | 'datetime'
+    locale?: string
+    options?: Intl.DateTimeFormatOptions
+    defaultString?: string
+  } = {},
+) {
+  // Validation
+  if (date === null || date === undefined) {
+    return defaultString
+  }
+  const dateObj = new Date(date)
+  if (Number.isNaN(dateObj.getTime())) {
+    return defaultString
+  }
+
+  // Format options
+  const defaultOptions: Record<'date' | 'datetime', Intl.DateTimeFormatOptions> = {
+    date: {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    },
+    datetime: {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+    },
+  }
+  const formatOptions = { ...defaultOptions[type], ...options }
+
+  try {
+    return new Intl.DateTimeFormat(locale, formatOptions).format(dateObj)
+  }
+  catch {
+    return defaultString
+  }
 }
 
 export function formatDateTime(date: number | string | Date, locale = 'en-us') {
