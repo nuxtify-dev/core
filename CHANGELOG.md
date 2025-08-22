@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.10] - 2025-08-22
+
+BREAKING CHANGES
+
+- refactor!: formatDate util function
+- refactor!: remove formatDateTime in favor of formatDate
+- refactor: useLogger
+
 ## [0.1.9] - 2025-06-24
 
 - fix: rollup import error
@@ -8,6 +16,8 @@
 - docs: add nuxtify app section
 
 ## [0.1.8] - 2025-06-17
+
+BREAKING CHANGES
 
 - dx!: revert "feat: export Link type"
 - feat: add useNuxtifySiteTitle composable
