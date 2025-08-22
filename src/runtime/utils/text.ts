@@ -168,16 +168,6 @@ export function formatDate(
   }
 }
 
-export function formatDateTime(date: number | string | Date, locale = 'en-us') {
-  return new Date(date).toLocaleString(locale, {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric',
-  })
-}
-
 export function booleanToText(bool: boolean) {
   return bool ? 'Yes' : 'No'
 }
