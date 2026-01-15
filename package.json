@@ -45,7 +45,7 @@
   "dependencies": {
     "@mdi/js": "^7.4.47",
     "defu": "^6.1.4",
-    "vuetify-nuxt-module": "^0.18.7"
+    "vuetify-nuxt-module": "^0.19.2"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.7.0",
