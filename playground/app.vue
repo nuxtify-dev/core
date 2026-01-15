@@ -129,6 +129,19 @@ const clickToast = () => {
             </v-card>
           </v-col>
         </v-row>
+
+        <!-- Link hover -->
+        <v-row>
+          <v-col cols="12">
+            <v-card class="pa-4">
+              <h2>link-hover class</h2>
+              <NuxtLink
+                href="#"
+                class="link-hover"
+              >This link</NuxtLink> should have the link-hover applied.
+            </v-card>
+          </v-col>
+        </v-row>
       </v-container>
     </v-main>
 
@@ -137,3 +150,12 @@ const clickToast = () => {
     <AppDialog class="d-print-none" />
   </v-app>
 </template>
+
+<style>
+.link-hover {
+  text-decoration: none;
+}
+.link-hover:hover {
+  text-decoration: underline;
+}
+</style>
