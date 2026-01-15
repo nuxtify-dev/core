@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.11] - 2026-01-15
+
+- feat: add useCopyText composable
+- feat: add link-hover utility global style
+- fix: useHead proper import
+- refactor: update core module logic to match docs
+- dx: add eslint warn import order rule
+- dx: add lint:fix npm command
+- chore(deps): update nuxt 3.x
+- chore(deps): update vuetify
+- chore(deps): update dev packages
+
+
 ## [0.1.10] - 2025-08-22
 
 BREAKING CHANGES
