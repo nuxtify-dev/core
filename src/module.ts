@@ -5,7 +5,6 @@ import {
   addServerImportsDir,
   createResolver,
   defineNuxtModule,
-  installModule,
   useLogger,
 } from '@nuxt/kit'
 import { defu } from 'defu'
@@ -14,7 +13,7 @@ import { name, version } from '../package.json'
 // Types
 import type { ModuleOptions } from './types'
 
-export default defineNuxtModule<ModuleOptions>({
+export default defineNuxtModule<ModuleOptions>().with({
   meta: {
     name,
     version,
@@ -22,6 +21,41 @@ export default defineNuxtModule<ModuleOptions>({
     compatibility: {
       nuxt: '>=3.16.0',
       bridge: false,
+    },
+  },
+  moduleDependencies: {
+    'vuetify-nuxt-module': {
+      version: '>=0.19.2',
+      defaults: {
+        vuetifyOptions: {
+          icons: {
+            defaultSet: 'mdi-svg',
+          },
+          theme: {
+            themes: {
+              light: {
+                colors: {
+                  primary: '#020420',
+                  secondary: '#00DC82',
+                  background: '#fff',
+                },
+              },
+            },
+          },
+          defaults: {
+            VBtn: { color: 'secondary', variant: 'flat', class: 'text-none' },
+            VAlert: {
+              VBtn: { color: 'inherit' },
+            },
+            VFooter: {
+              VBtn: { color: 'inherit' },
+            },
+            VNumberInput: {
+              VBtn: { color: 'inherit', variant: 'inherit' },
+            },
+          },
+        },
+      },
     },
   },
   defaults: {
@@ -80,65 +114,34 @@ export default defineNuxtModule<ModuleOptions>({
       support: '',
     },
   },
-  async setup(_options, _nuxt) {
-    const resolver = createResolver(import.meta.url)
+  async setup(resolvedOptions, nuxt) {
+    const { resolve } = createResolver(import.meta.url)
+    const logger = useLogger('nuxtify-core')
 
-    if (_options.verboseLogs) useLogger('[nuxtify-core] Verbose logging enabled.')
-
-    // Modules
-    await installModule('vuetify-nuxt-module', {
-      vuetifyOptions: {
-        icons: {
-          defaultSet: 'mdi-svg',
-        },
-        theme: {
-          themes: {
-            light: {
-              colors: {
-                primary: '#020420',
-                secondary: '#00DC82',
-                background: '#fff',
-              },
-            },
-          },
-        },
-        defaults: {
-          VBtn: { color: 'secondary', variant: 'flat', class: 'text-none' },
-          VAlert: {
-            VBtn: { color: 'inherit' },
-          },
-          VFooter: {
-            VBtn: { color: 'inherit' },
-          },
-          VNumberInput: {
-            VBtn: { color: 'inherit', variant: 'inherit' },
-          },
-        },
-      },
-    })
+    if (resolvedOptions.verboseLogs) logger.info('Verbose logging enabled.')
 
     // Expose module options to app config
-    _nuxt.options.appConfig.nuxtify = defu(_nuxt.options.appConfig.nuxtify, {
-      ..._options,
+    nuxt.options.appConfig.nuxtify = defu(nuxt.options.appConfig.nuxtify || {}, {
+      ...resolvedOptions,
     })
 
     // Components
     addComponentsDir({
-      path: resolver.resolve('./runtime/components'),
+      path: resolve('./runtime/components'),
     })
 
     // Composables
-    addImportsDir(resolver.resolve('./runtime/composables'))
-    addServerImportsDir(resolver.resolve('./runtime/server/composables'))
+    addImportsDir(resolve('./runtime/composables'))
+    addServerImportsDir(resolve('./runtime/server/composables'))
 
     // Utils
-    addImportsDir(resolver.resolve('./runtime/utils'))
-    addServerImportsDir(resolver.resolve('./runtime/server/utils'))
+    addImportsDir(resolve('./runtime/utils'))
+    addServerImportsDir(resolve('./runtime/server/utils'))
 
     // Middleware
     addRouteMiddleware({
       name: 'setup',
-      path: resolver.resolve('./runtime/middleware/setup'),
+      path: resolve('./runtime/middleware/setup'),
       global: true,
     })
   },
