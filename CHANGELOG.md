@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.2.0] - 2026-01-15
+
+Nuxt 4 support.
+
+### 🚨 Breaking Changes
+
+- chore(deps)!: upgrade to nuxt 4
+
+### Changes
+
+- fix: possibly undefined type errors
+- fix: replace deprecated server seo meta composable
+- chore(deps): update dev package majors
+- chore(deps): update typescript
+- chore: delete .npmrc
+
 ## [0.1.11] - 2026-01-15
 
 - feat: add useCopyText composable
@@ -12,13 +28,15 @@
 - chore(deps): update vuetify
 - chore(deps): update dev packages
 
-
 ## [0.1.10] - 2025-08-22
 
-BREAKING CHANGES
+### 🚨 Breaking Changes
 
 - refactor!: formatDate util function
 - refactor!: remove formatDateTime in favor of formatDate
+
+### Changes
+
 - refactor: useLogger
 
 ## [0.1.9] - 2025-06-24
@@ -30,9 +48,12 @@ BREAKING CHANGES
 
 ## [0.1.8] - 2025-06-17
 
-BREAKING CHANGES
+### 🚨 Breaking Changes
 
 - dx!: revert "feat: export Link type"
+
+### Changes
+
 - feat: add useNuxtifySiteTitle composable
 - feat: add AppCredits component
 - feat: add utils functions
