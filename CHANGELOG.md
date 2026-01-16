@@ -1,8 +1,10 @@
 # Changelog
 
-## [0.2.0] - 2026-01-15
+## [0.2.1] - 2026-01-15
 
 Nuxt 4 support.
+
+_v0.2.0 was unpublished due to an installation bug._
 
 ### 🚨 Breaking Changes
 
