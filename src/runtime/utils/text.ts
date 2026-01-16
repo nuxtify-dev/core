@@ -7,17 +7,22 @@ export const titleCase = (text: string, skipShortWords = true) => {
   const titleWords = []
 
   for (const [i] of words.entries()) {
-    if (skipShortWords && shortWords.includes(words[i])) {
+    const word = words[i]
+    if (!word) {
+      continue
+    }
+
+    if (skipShortWords && shortWords.includes(word)) {
       // Force uppercase if it's the first word
       if (i === 0) {
-        titleWords.push(words[i].charAt(0).toUpperCase() + words[i].slice(1))
+        titleWords.push(word.charAt(0).toUpperCase() + word.slice(1))
       }
       else {
-        titleWords.push(words[i])
+        titleWords.push(word)
       }
     }
     else {
-      titleWords.push(words[i].charAt(0).toUpperCase() + words[i].slice(1))
+      titleWords.push(word.charAt(0).toUpperCase() + word.slice(1))
     }
   }
 
@@ -51,7 +56,7 @@ export function parseFullName(fullName: string | undefined | null) {
   let lastName = ''
   if (fullName) {
     const nameSplit = fullName.split(' ')
-    firstName = nameSplit[0]
+    firstName = nameSplit[0] ?? ''
 
     if (nameSplit.length > 1) {
       lastName = nameSplit.slice(1).join(' ')
@@ -271,7 +276,7 @@ export function addArticle(
   // Handle empty string case first
   if (!text) return ''
 
-  const firstLetter = text[0].toLowerCase()
+  const firstLetter = text[0]?.toLowerCase() ?? ''
   // Extended list of vowels for basic check.
   // Does not handle phonetic exceptions like "hour" (needs "an") or "university" (needs "a").
   const vowels: string[] = ['a', 'e', 'i', 'o', 'u']
