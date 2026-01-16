@@ -1,5 +1,26 @@
 # Changelog
 
+## v0.3.0
+
+[compare changes](https://github.com/nuxtify-dev/core/compare/v0.2.1...v0.3.0)
+
+### 🩹 Fixes
+
+- UseHead proper import" ([0254494](https://github.com/nuxtify-dev/core/commit/0254494))
+- UseHead proper import from #app ([3ec4ccf](https://github.com/nuxtify-dev/core/commit/3ec4ccf))
+
+### 💅 Refactors
+
+- ⚠️  Rename to AppAnnouncement ([3797063](https://github.com/nuxtify-dev/core/commit/3797063))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Rename to AppAnnouncement ([3797063](https://github.com/nuxtify-dev/core/commit/3797063))
+
+### ❤️ Contributors
+
+- David Stack ([@davidstackio](https://github.com/davidstackio))
+
 ## [0.2.1] - 2026-01-15
 
 Nuxt 4 support.
