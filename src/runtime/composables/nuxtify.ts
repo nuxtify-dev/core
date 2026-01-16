@@ -1,6 +1,5 @@
 import type { ModuleOptions } from '../../types'
-import { useHead } from '#app'
-import { useAppConfig } from '#imports'
+import { useAppConfig, useHead } from '#imports'
 
 export const useNuxtifyConfig = (): ModuleOptions => useAppConfig().nuxtify
 
