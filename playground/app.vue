@@ -7,7 +7,7 @@ const errorMessage = useErrorMessage()
 
 // Page info
 useNuxtifySiteTitle()
-useServerSeoMeta({
+useSeoMeta({
   title: `${nuxtifyConfig.brand?.name} playground`,
   description: `This is the ${nuxtifyConfig.brand?.name} playground.`,
 })
