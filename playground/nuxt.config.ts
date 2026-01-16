@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   modules: ['../src/module'],
   devtools: { enabled: true },
-  compatibilityDate: '2025-05-13',
+  compatibilityDate: '2026-01-15',
   nuxtifyCore: {
     // Logs
     verboseLogs: true,
