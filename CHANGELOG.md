@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.3.1
+
+[compare changes](https://github.com/nuxtify-dev/core/compare/v0.3.0...v0.3.1)
+
+### 🩹 Fixes
+
+- UseHead proper import from #imports ([b8c88d3](https://github.com/nuxtify-dev/core/commit/b8c88d3))
+
+### 💅 Refactors
+
+- **playground:** Move nuxtify to app config ([116bd29](https://github.com/nuxtify-dev/core/commit/116bd29))
+
+### ❤️ Contributors
+
+- David Stack ([@davidstackio](https://github.com/davidstackio))
+
 ## v0.3.0
 
 [compare changes](https://github.com/nuxtify-dev/core/compare/v0.2.1...v0.3.0)
