@@ -1,5 +1,5 @@
-import { useHead } from '@unhead/vue'
 import type { ModuleOptions } from '../../types'
+import { useHead } from '#app'
 import { useAppConfig } from '#imports'
 
 export const useNuxtifyConfig = (): ModuleOptions => useAppConfig().nuxtify
