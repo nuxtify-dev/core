@@ -37,7 +37,7 @@ const clickToast = () => {
     <!-- Accessibility -->
     <NuxtRouteAnnouncer />
 
-    <AppAnnouncementBar
+    <AppAnnouncement
       v-if="nuxtifyConfig.announcement?.show"
       class="d-print-none"
     />

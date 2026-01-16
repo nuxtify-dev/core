@@ -83,7 +83,7 @@ export interface ModuleOptions {
   policies?: PoliciesOptions
 
   /**
-   * Announcement banner options
+   * Announcement options
    */
   announcement?: {
     show?: boolean
