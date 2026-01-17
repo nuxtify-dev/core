@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { mdiHome } from '@mdi/js'
+
 // App state
 const nuxtifyConfig = useNuxtifyConfig()
 const dialog = useDialog()
@@ -139,6 +141,17 @@ const clickToast = () => {
                 href="#"
                 class="link-hover"
               >This link</NuxtLink> should have the link-hover applied.
+            </v-card>
+          </v-col>
+        </v-row>
+
+        <!-- Icons -->
+        <v-row>
+          <v-col cols="12">
+            <v-card class="pa-4">
+              <h2>Icons</h2>
+
+              Home <v-icon :icon="mdiHome" />
             </v-card>
           </v-col>
         </v-row>
