@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.4.0
+
+[compare changes](https://github.com/nuxtify-dev/core/compare/v0.3.1...v0.4.0)
+
+### 🩹 Fixes
+
+- UseHead proper import from @unhead/vue ([b59d2c5](https://github.com/nuxtify-dev/core/commit/b59d2c5))
+
+### 💅 Refactors
+
+- ⚠️  Remove mdi/js ([5996bf4](https://github.com/nuxtify-dev/core/commit/5996bf4))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Remove mdi/js ([5996bf4](https://github.com/nuxtify-dev/core/commit/5996bf4))
+
+### ❤️ Contributors
+
+- David Stack ([@davidstackio](https://github.com/davidstackio))
+
 ## v0.3.1
 
 [compare changes](https://github.com/nuxtify-dev/core/compare/v0.3.0...v0.3.1)
