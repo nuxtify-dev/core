@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { mdiHome } from '@mdi/js'
-
 // App state
 const nuxtifyConfig = useNuxtifyConfig()
 const dialog = useDialog()
@@ -151,7 +149,7 @@ const clickToast = () => {
             <v-card class="pa-4">
               <h2>Icons</h2>
 
-              Home <v-icon :icon="mdiHome" />
+              Home <v-icon icon="mdi-home" />
             </v-card>
           </v-col>
         </v-row>

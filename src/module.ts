@@ -27,9 +27,6 @@ export default defineNuxtModule<ModuleOptions>().with({
       version: '>=0.19.2',
       defaults: {
         vuetifyOptions: {
-          icons: {
-            defaultSet: 'mdi-svg',
-          },
           theme: {
             themes: {
               light: {
