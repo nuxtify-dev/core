@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.2] - 2026-01-26
+
+- ui: app announcement tonal bg color
+
+- Revert "chore(deps): update vuetify nuxt module"
+- Revert "ui: change app announcement bar bg color"
+- Revert "feat: add theme color variations"
+
 ## [0.4.1] - 2026-01-26
 
 ### 🚀 Enhancements
