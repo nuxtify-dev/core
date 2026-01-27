@@ -15,7 +15,7 @@ const isExternalLink = computed(() =>
   <v-system-bar
     :height="xs ? 60 : 40"
     :order="-100"
-    color="primary"
+    color="secondary-lighten-5"
     class="justify-center text-start"
   >
     <div
