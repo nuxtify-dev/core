@@ -1,12 +1,10 @@
 # Changelog
 
-## v0.4.1
-
-[compare changes](https://github.com/nuxtify-dev/core/compare/v0.4.0...v0.4.1)
+## [0.4.1] - 2026-01-26
 
 ### 🚀 Enhancements
 
-- Add theme color variations ([5a2c5a9](https://github.com/nuxtify-dev/core/commit/5a2c5a9))
+- Add theme color variations
 
 ### Changes
 
@@ -15,68 +13,38 @@
 
 ### 📖 Documentation
 
-- Update readme ([54fc280](https://github.com/nuxtify-dev/core/commit/54fc280))
+- Update readme
 
-### ❤️ Contributors
-
-- David Stack ([@davidstackio](https://github.com/davidstackio))
-
-## v0.4.0
-
-[compare changes](https://github.com/nuxtify-dev/core/compare/v0.3.1...v0.4.0)
+## [0.4.0] - 2026-01-17
 
 ### 🩹 Fixes
 
-- UseHead proper import from @unhead/vue ([b59d2c5](https://github.com/nuxtify-dev/core/commit/b59d2c5))
+- UseHead proper import from @unhead/vue
 
-### 💅 Refactors
+### 🚨 Breaking Changes
 
-- ⚠️  Remove mdi/js ([5996bf4](https://github.com/nuxtify-dev/core/commit/5996bf4))
+- 🚨  Remove mdi/js
 
-#### ⚠️ Breaking Changes
-
-- ⚠️  Remove mdi/js ([5996bf4](https://github.com/nuxtify-dev/core/commit/5996bf4))
-
-### ❤️ Contributors
-
-- David Stack ([@davidstackio](https://github.com/davidstackio))
-
-## v0.3.1
-
-[compare changes](https://github.com/nuxtify-dev/core/compare/v0.3.0...v0.3.1)
+## [0.3.1] - 2026-01-16
 
 ### 🩹 Fixes
 
-- UseHead proper import from #imports ([b8c88d3](https://github.com/nuxtify-dev/core/commit/b8c88d3))
+- UseHead proper import from #imports
 
-### 💅 Refactors
+### Refactors
 
-- **playground:** Move nuxtify to app config ([116bd29](https://github.com/nuxtify-dev/core/commit/116bd29))
+- **playground:** Move nuxtify to app config
 
-### ❤️ Contributors
-
-- David Stack ([@davidstackio](https://github.com/davidstackio))
-
-## v0.3.0
-
-[compare changes](https://github.com/nuxtify-dev/core/compare/v0.2.1...v0.3.0)
+## [0.3.0] - 2026-01-16
 
 ### 🩹 Fixes
 
-- UseHead proper import" ([0254494](https://github.com/nuxtify-dev/core/commit/0254494))
-- UseHead proper import from #app ([3ec4ccf](https://github.com/nuxtify-dev/core/commit/3ec4ccf))
+- UseHead proper import"
+- UseHead proper import from #app
 
-### 💅 Refactors
+### 🚨 Breaking Changes
 
-- ⚠️  Rename to AppAnnouncement ([3797063](https://github.com/nuxtify-dev/core/commit/3797063))
-
-#### ⚠️ Breaking Changes
-
-- ⚠️  Rename to AppAnnouncement ([3797063](https://github.com/nuxtify-dev/core/commit/3797063))
-
-### ❤️ Contributors
-
-- David Stack ([@davidstackio](https://github.com/davidstackio))
+- 🚨 Rename to AppAnnouncement
 
 ## [0.2.1] - 2026-01-15
 
