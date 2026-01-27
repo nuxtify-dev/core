@@ -1,5 +1,26 @@
 # Changelog
 
+## v0.4.1
+
+[compare changes](https://github.com/nuxtify-dev/core/compare/v0.4.0...v0.4.1)
+
+### 🚀 Enhancements
+
+- Add theme color variations ([5a2c5a9](https://github.com/nuxtify-dev/core/commit/5a2c5a9))
+
+### Changes
+
+- ui: change app announcement bar bg color
+- chore(deps): update vuetify nuxt module
+
+### 📖 Documentation
+
+- Update readme ([54fc280](https://github.com/nuxtify-dev/core/commit/54fc280))
+
+### ❤️ Contributors
+
+- David Stack ([@davidstackio](https://github.com/davidstackio))
+
 ## v0.4.0
 
 [compare changes](https://github.com/nuxtify-dev/core/compare/v0.3.1...v0.4.0)
