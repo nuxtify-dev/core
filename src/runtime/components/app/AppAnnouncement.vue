@@ -1,21 +1,34 @@
 <script setup lang="ts">
-import { computed, isExternalUrl, useDisplay, useNuxtifyConfig } from '#imports'
+import { computed, isExternalUrl, useDisplay, useNuxtifyConfig, useRoute } from '#imports'
 
 // App state
 const nuxtifyConfig = useNuxtifyConfig()
 const { xs } = useDisplay()
+const route = useRoute()
 
 // Component state
 const isExternalLink = computed(() =>
   isExternalUrl(nuxtifyConfig.announcement?.buttonUrl ?? '', nuxtifyConfig.brand?.domain ?? ''),
 )
+
+const shouldShow = computed(() => {
+  if (!nuxtifyConfig.announcement?.show) return false
+
+  const hasContent = nuxtifyConfig.announcement?.message || (nuxtifyConfig.announcement?.buttonText && nuxtifyConfig.announcement?.buttonUrl)
+  if (!hasContent) return false
+
+  // Exclude routes
+  const exclude: string[] = nuxtifyConfig.announcement?.exclude || []
+  return !exclude.includes(route.path)
+})
 </script>
 
 <template>
   <v-system-bar
+    v-if="shouldShow"
     :height="xs ? 60 : 40"
     :order="-100"
-    class="app-announcement justify-center text-start"
+    class="app-announcement justify-center text-start d-print-none"
   >
     <div
       v-if="nuxtifyConfig.announcement?.message"

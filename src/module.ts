@@ -83,6 +83,7 @@ export default defineNuxtModule<ModuleOptions>().with({
       message: '',
       buttonText: '',
       buttonUrl: '',
+      exclude: [],
     },
 
     // Navigation

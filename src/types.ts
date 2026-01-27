@@ -90,6 +90,7 @@ export interface ModuleOptions {
     message?: string
     buttonText?: string
     buttonUrl?: string
+    exclude?: string[]
   }
 
   /**
