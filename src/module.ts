@@ -37,11 +37,6 @@ export default defineNuxtModule<ModuleOptions>().with({
                 },
               },
             },
-            variations: {
-              colors: ['primary', 'secondary'],
-              lighten: 5,
-              darken: 5,
-            },
           },
           defaults: {
             VBtn: { color: 'secondary', variant: 'flat', class: 'text-none' },
