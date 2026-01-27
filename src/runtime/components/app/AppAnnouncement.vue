@@ -40,6 +40,10 @@ const isExternalLink = computed(() =>
 
 <style lang="css" scoped>
 .app-announcement {
-  background-color: rgb(var(--v-theme-secondary), var(--v-activated-opacity));
+  background-color: rgb(var(--v-theme-surface));
+  background-image: linear-gradient(
+    rgb(var(--v-theme-secondary), var(--v-activated-opacity)),
+    rgb(var(--v-theme-secondary), var(--v-activated-opacity))
+  );
 }
 </style>
