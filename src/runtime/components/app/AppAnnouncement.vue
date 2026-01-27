@@ -15,8 +15,7 @@ const isExternalLink = computed(() =>
   <v-system-bar
     :height="xs ? 60 : 40"
     :order="-100"
-    color="primary"
-    class="justify-center text-start"
+    class="app-announcement justify-center text-start"
   >
     <div
       v-if="nuxtifyConfig.announcement?.message"
@@ -38,3 +37,9 @@ const isExternalLink = computed(() =>
     </v-btn>
   </v-system-bar>
 </template>
+
+<style lang="css" scoped>
+.app-announcement {
+  background-color: rgb(var(--v-theme-secondary), var(--v-activated-opacity));
+}
+</style>
