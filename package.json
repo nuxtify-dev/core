@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "defu": "^6.1.4",
-    "vuetify-nuxt-module": "^0.19.2"
+    "vuetify-nuxt-module": "^0.19.5"
   },
   "devDependencies": {
     "@nuxt/devtools": "^3.1.1",
