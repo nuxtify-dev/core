@@ -24,7 +24,7 @@ export default defineNuxtModule<ModuleOptions>().with({
   },
   moduleDependencies: {
     'vuetify-nuxt-module': {
-      version: '>=0.19.2',
+      version: '>=0.19.5',
       defaults: {
         vuetifyOptions: {
           theme: {
