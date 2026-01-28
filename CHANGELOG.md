@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.3] - 2026-01-28
+
+- feat: add exclude routes to AppAnnouncement
+- fix(ui): transparent AppAnnouncement
+- chore(deps): update vuetify-nuxt-module
+
 ## [0.4.2] - 2026-01-26
 
 - ui: app announcement tonal bg color
