@@ -100,7 +100,7 @@ Nuxtify Core builds on the amazing features of [Vue](https://vuejs.org/guide/int
 
 - Fully tree shakeable for small bundle sizes
 - Optimized caching and rendering strategies for each page with [hybrid rendering](https://nuxt.com/docs/guide/concepts/rendering#hybrid-rendering)
-- (coming soon) Fast, responsive, optimized images for [20+ image providers](https://image.nuxt.com/get-started/providers) powered by [Nuxt Image](https://image.nuxt.com/)
+- Fast, responsive, optimized images for [30+ image providers](https://image.nuxt.com/get-started/providers) powered by [Nuxt Image](https://image.nuxt.com/)
 - (coming soon) Load third-party scripts with better performance, privacy, security powered by [Nuxt Scripts](https://scripts.nuxt.com/)
 - (coming soon) Optimal security patterns and principles powered by [Nuxt Security](https://nuxt.com/modules/security)
 

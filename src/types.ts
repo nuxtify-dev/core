@@ -55,9 +55,27 @@ interface BrandOptions {
     /**
      * The width of the logo on mobile.
      *
-     * @default 150
+     * @default 160
      */
     mobileWidth?: number
+    /**
+     * The height of the logo.
+     *
+     * @default 50
+     */
+    height?: number
+    /**
+     * The height of the logo on mobile.
+     *
+     * @default 40
+     */
+    mobileHeight?: number
+    /**
+     * The format of the logo.
+     *
+     * @default "webp"
+     */
+    format?: 'webp' | 'avif' | 'jpeg' | 'jpg' | 'png' | 'gif' | 'svg'
   }
 }
 

@@ -2,15 +2,14 @@
 import { computed, useAppConfig, useDisplay } from '#imports'
 
 // Props
-const props = defineProps({
-  dark: {
-    type: Boolean,
-    default: false,
-  },
-  width: {
-    type: Number,
-    default: undefined,
-  },
+const props = withDefaults(defineProps<{
+  dark?: boolean
+  width?: number
+  height?: number
+  format?: string
+}>(), {
+  dark: false,
+  format: 'webp',
 })
 
 // App state
@@ -37,12 +36,26 @@ const width = computed(() => {
       : nuxtifyConfig.brand.logo.width
   }
 })
+
+// Image height logic
+const height = computed(() => {
+  if (props.height) {
+    return props.height
+  }
+  else {
+    return smAndDown.value
+      ? nuxtifyConfig.brand.logo.mobileHeight
+      : nuxtifyConfig.brand.logo.height
+  }
+})
 </script>
 
 <template>
-  <v-img
+  <NuxtImg
     v-if="imageUrl"
     :width
+    :height
+    :format
     :src="imageUrl"
     :alt="`${nuxtifyConfig.brand.name} logo`"
   />

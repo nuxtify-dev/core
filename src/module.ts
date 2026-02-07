@@ -23,6 +23,9 @@ export default defineNuxtModule<ModuleOptions>().with({
     },
   },
   moduleDependencies: {
+    '@nuxt/image': {
+      version: '>=2.0.0',
+    },
     'vuetify-nuxt-module': {
       version: '>=0.19.5',
       defaults: {
@@ -67,7 +70,10 @@ export default defineNuxtModule<ModuleOptions>().with({
         lightUrl: '',
         darkUrl: '',
         width: 200,
-        mobileWidth: 150,
+        mobileWidth: 160,
+        height: 50,
+        mobileHeight: 40,
+        format: 'webp',
       },
     },
 
