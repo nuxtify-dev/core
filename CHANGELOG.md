@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.5.0] - 2026-02-07
+
+- feat: use nuxt image module
+- fix: bump min vuetify-nuxt-module compat version
+- chore(deps): update dev packages and Nuxt
+
 ## [0.4.3] - 2026-01-28
 
 - feat: add exclude routes to AppAnnouncement
