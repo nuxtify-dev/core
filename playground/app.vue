@@ -21,7 +21,11 @@ const clickDialog = () => {
   dialog.value.title = 'This is a dialog!'
   dialog.value.message = 'It can have fun messages.'
   dialog.value.action.function = () => {
-    dialog.value.show = false
+    dialog.value.action.loading = true
+    setTimeout(() => {
+      dialog.value.action.loading = false
+      dialog.value.show = false
+    }, 2000)
   }
   dialog.value.show = true
 }
