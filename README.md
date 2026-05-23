@@ -117,7 +117,7 @@ To use this module in your [new](https://nuxt.com/docs/getting-started/installat
 Install the module in your Nuxt application with one command:
 
 ```bash
-npx nuxi@latest module add @nuxtify/core
+npx nuxt module add @nuxtify/core
 ```
 
 ### 2. Update Nuxt config

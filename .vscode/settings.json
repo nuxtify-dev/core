@@ -2,7 +2,6 @@
   "eslint.useFlatConfig": true,
   "cSpell.words": [
     "defu",
-    "nuxi",
     "Nuxt",
     "nuxtify",
     "unhead",
