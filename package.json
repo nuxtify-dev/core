@@ -44,7 +44,7 @@
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
   },
   "dependencies": {
-    "defu": "^6.1.4",
+    "defu": "^6.1.7",
     "vuetify-nuxt-module": "^0.19.5"
   },
   "devDependencies": {
