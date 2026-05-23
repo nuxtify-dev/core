@@ -75,7 +75,7 @@ interface BrandOptions {
      *
      * @default "webp"
      */
-    format?: 'webp' | 'avif' | 'jpeg' | 'jpg' | 'png' | 'gif' | 'svg'
+    format?: string
   }
 }
 
