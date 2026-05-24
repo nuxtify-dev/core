@@ -11,5 +11,7 @@ describe('ssr', async () => {
     // Get response to a server-rendered page with `$fetch`.
     const html = await $fetch('/')
     expect(html).toContain('<div>basic</div>')
+    expect(html).toContain('NEWS')
+    expect(html).toContain('This is a test announcement!')
   })
 })

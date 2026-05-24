@@ -87,9 +87,11 @@ export default defineNuxtModule<ModuleOptions>().with({
     announcement: {
       show: false,
       message: '',
+      chipText: '',
+      chipColor: '',
       buttonText: '',
       buttonUrl: '',
-      exclude: [],
+      exclude: [] as string[],
     },
 
     // Navigation

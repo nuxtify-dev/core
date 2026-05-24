@@ -106,6 +106,16 @@ export interface ModuleOptions {
   announcement?: {
     show?: boolean
     message?: string
+    /**
+     * Text for the announcement chip.
+     */
+    chipText?: string
+    /**
+     * Color for the announcement chip.
+     *
+     * @default "secondary"
+     */
+    chipColor?: string
     buttonText?: string
     buttonUrl?: string
     exclude?: string[]

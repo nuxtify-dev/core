@@ -11,10 +11,15 @@ const isExternalLink = computed(() =>
   isExternalUrl(nuxtifyConfig.announcement?.buttonUrl ?? '', nuxtifyConfig.brand?.domain ?? ''),
 )
 
+const chipText = computed(() => nuxtifyConfig.announcement?.chipText?.toUpperCase() ?? '')
+
 const shouldShow = computed(() => {
   if (!nuxtifyConfig.announcement?.show) return false
 
-  const hasContent = nuxtifyConfig.announcement?.message || (nuxtifyConfig.announcement?.buttonText && nuxtifyConfig.announcement?.buttonUrl)
+  const hasContent
+    = nuxtifyConfig.announcement?.message
+      || nuxtifyConfig.announcement?.chipText
+      || (nuxtifyConfig.announcement?.buttonText && nuxtifyConfig.announcement?.buttonUrl)
   if (!hasContent) return false
 
   // Exclude routes
@@ -30,6 +35,14 @@ const shouldShow = computed(() => {
     :order="-100"
     class="app-announcement justify-center text-start d-print-none"
   >
+    <v-chip
+      v-if="chipText"
+      :color="nuxtifyConfig.announcement?.chipColor || 'secondary'"
+      size="small"
+      class="mr-2 font-weight-bold"
+    >
+      {{ chipText }}
+    </v-chip>
     <div
       v-if="nuxtifyConfig.announcement?.message"
       :class="`${xs ? 'text-subtitle-2' : 'text-subtitle-1'} mr-4`"
