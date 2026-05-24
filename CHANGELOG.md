@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.6.1
+
+[compare changes](https://github.com/nuxtify-dev/core/compare/v0.6.0...v0.6.1)
+
+### 🩹 Fixes
+
+- **deps:** @nuxt/image direct dep ([f599de6](https://github.com/nuxtify-dev/core/commit/f599de6))
+
+### 🏡 Chore
+
+- Update release command ([4196543](https://github.com/nuxtify-dev/core/commit/4196543))
+
 ## v0.6.0
 
 [compare changes](https://github.com/nuxtify-dev/core/compare/v0.5.0...v0.6.0)
