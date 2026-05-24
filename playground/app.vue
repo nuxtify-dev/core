@@ -18,25 +18,20 @@ useSeoMeta({
     <AppAnnouncement />
 
     <v-main>
-      <v-container>
+      <v-container class="py-8">
         <v-row>
           <v-col cols="12">
-            <h1>{{ nuxtifyConfig.brand?.name }} playground</h1>
-          </v-col>
-        </v-row>
-
-        <!-- Nuxtify config -->
-        <v-row>
-          <v-col cols="12">
-            <v-card class="pa-4">
-              <h2>nuxtifyConfig</h2>
-              <pre>{{ nuxtifyConfig }}</pre>
-            </v-card>
+            <h1>Welcome to the {{ nuxtifyConfig.brand?.name }} playground!</h1>
+            <p class="text-body-1 text-medium-emphasis">
+              Explore the core functionalities and configuration of the <strong>@nuxtify/core</strong> module.
+            </p>
           </v-col>
         </v-row>
       </v-container>
 
       <DemoCore />
+
+      <DemoConfig />
     </v-main>
 
     <AppToast class="d-print-none" />
