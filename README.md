@@ -216,7 +216,7 @@ Learn about [authoring Nuxt modules](https://nuxt.com/docs/guide/going-further/m
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/@nuxtify/core/latest.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-version-src]: https://img.shields.io/npm/v/@nuxtify/core/latest.svg?style=flat&colorA=020420&colorB=00DC82&label=version
 [npm-version-href]: https://npmx.dev/package/@nuxtify/core
 [npm-downloads-src]: https://img.shields.io/npm/dm/@nuxtify/core.svg?style=flat&colorA=020420&colorB=00DC82
 [npm-downloads-href]: https://npm.chart.dev/@nuxtify/core
