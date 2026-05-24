@@ -4,7 +4,9 @@
     "defu",
     "Nuxt",
     "nuxtify",
+    "Sandboxed",
     "unhead",
+    "Vitest",
     "vuetify"
   ],
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
