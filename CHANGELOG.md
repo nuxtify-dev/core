@@ -1,5 +1,33 @@
 # Changelog
 
+## v0.6.0
+
+[compare changes](https://github.com/nuxtify-dev/core/compare/v0.5.0...v0.6.0)
+
+### 🚀 Enhancements
+
+- Add dialog action.loading prop ([0ca94a6](https://github.com/nuxtify-dev/core/commit/0ca94a6))
+- **UI:** Add chip to announcement bar ([c33c781](https://github.com/nuxtify-dev/core/commit/c33c781))
+- Add analytics composable ([a70b9c5](https://github.com/nuxtify-dev/core/commit/a70b9c5))
+- Add useRouteParam composable ([8d44538](https://github.com/nuxtify-dev/core/commit/8d44538))
+
+### 🩹 Fixes
+
+- **dx:** Relax image format types ([d06f59f](https://github.com/nuxtify-dev/core/commit/d06f59f))
+
+### 💅 Refactors
+
+- **playground:** Create DemoCore component ([bc31be6](https://github.com/nuxtify-dev/core/commit/bc31be6))
+
+### 📖 Documentation
+
+- Use npmx.dev in readme ([05a3b32](https://github.com/nuxtify-dev/core/commit/05a3b32))
+
+### 🏡 Chore
+
+- Spelling ([15c8e9f](https://github.com/nuxtify-dev/core/commit/15c8e9f))
+- Prefer nuxt to nuxi ([f19e799](https://github.com/nuxtify-dev/core/commit/f19e799))
+
 ## [0.5.0] - 2026-02-07
 
 - feat: use nuxt image module
