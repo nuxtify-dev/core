@@ -26,6 +26,20 @@ const clickToast = () => {
   toast.value.message = 'This is a toast!'
   toast.value.show = true
 }
+
+const analytics = useAnalytics()
+const triggerSignUp = () => {
+  analytics.userSignUp()
+}
+const triggerSignIn = () => {
+  analytics.userSignIn()
+}
+const triggerSignOut = () => {
+  analytics.userSignOut()
+}
+const triggerUpgrade = () => {
+  analytics.userUpgrade('pro_plan')
+}
 </script>
 
 <template>
@@ -109,6 +123,41 @@ const clickToast = () => {
             href="#"
             class="text-secondary link-hover"
           >This link</NuxtLink> should have the link-hover applied.
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <!-- Analytics -->
+    <v-row>
+      <v-col cols="12">
+        <v-card class="pa-4">
+          <h2>useAnalytics</h2>
+          <div class="d-flex flex-wrap gap-2 mt-2">
+            <v-btn
+              class="mr-2 mb-2"
+              @click="triggerSignUp"
+            >
+              Sign Up
+            </v-btn>
+            <v-btn
+              class="mr-2 mb-2"
+              @click="triggerSignIn"
+            >
+              Sign In
+            </v-btn>
+            <v-btn
+              class="mr-2 mb-2"
+              @click="triggerSignOut"
+            >
+              Sign Out
+            </v-btn>
+            <v-btn
+              class="mb-2"
+              @click="triggerUpgrade"
+            >
+              Upgrade (pro_plan)
+            </v-btn>
+          </div>
         </v-card>
       </v-col>
     </v-row>
