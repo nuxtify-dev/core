@@ -37,6 +37,7 @@ const shouldShow = computed(() => {
   >
     <v-chip
       v-if="chipText"
+      tag="div"
       :color="nuxtifyConfig.announcement?.chipColor || 'secondary'"
       size="small"
       class="mr-2 font-weight-bold"
