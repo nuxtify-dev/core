@@ -235,7 +235,7 @@ const triggerUpgrade = () => {
               </h3>
               <div class="py-4 px-4 bg-grey-lighten-4 rounded mb-4">
                 <div class="text-caption text-medium-emphasis mb-2 font-weight-bold">
-                  AppLogo (with Custom Override support):
+                  AppLogo Component:
                 </div>
                 <div class="d-flex justify-center bg-white py-4 rounded border mb-4">
                   <AppLogo />

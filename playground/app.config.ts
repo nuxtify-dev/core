@@ -3,6 +3,14 @@ export default defineAppConfig({
     // Brand
     brand: {
       tagline: 'Catchy tagline',
+      logo: {
+        lightUrl: '/img/nuxtify-logo-light.png', // Recommended 5:1 aspect ratio (e.g. 400 x 80 px)
+        darkUrl: '/img/nuxtify-logo-dark.png', // Recommended 5:1 aspect ratio (e.g. 400 x 80 px)
+        width: 400,
+        height: 80,
+        mobileWidth: 200,
+        mobileHeight: 40,
+      },
     },
 
     // Announcement
