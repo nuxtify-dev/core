@@ -28,13 +28,15 @@ const dialog = useDialog()
         </v-btn>
 
         <v-btn
-          :color="dialog.action.buttonColor || 'secondary'"
+          :color="dialog.action.button.color || 'secondary'"
           :loading="dialog.action.loading"
           :disabled="dialog.action.loading"
+          :append-icon="dialog.action.button.appendIcon"
+          :prepend-icon="dialog.action.button.prependIcon"
           variant="flat"
           @click="dialog.action.function"
         >
-          {{ dialog.action.buttonText }}
+          {{ dialog.action.button.text }}
         </v-btn>
       </v-card-actions>
     </v-card>

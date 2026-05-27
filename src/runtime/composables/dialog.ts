@@ -6,10 +6,14 @@ export interface Dialog {
   title: string
   message: string
   action: {
+    button: {
+      color?: string
+      text: string
+      prependIcon?: string
+      appendIcon?: string
+    }
     function: (() => Promise<void>) | (() => void) | null
-    buttonText: string
-    buttonColor: string
-    loading: boolean
+    loading?: boolean
   }
   closeButtonText: string
 }
@@ -19,9 +23,13 @@ export const dialogInitialState: Dialog = {
   title: '',
   message: '',
   action: {
+    button: {
+      color: '',
+      text: 'Confirm',
+      appendIcon: '',
+      prependIcon: '',
+    },
     function: null,
-    buttonText: 'Confirm',
-    buttonColor: '',
     loading: false,
   },
   closeButtonText: 'Cancel',
