@@ -63,7 +63,7 @@ export default defineNuxtModule<ModuleOptions>().with({
 
     // Brand
     brand: {
-      name: '@nuxtify/core',
+      name: '',
       domain: '',
       tagline: '',
       logo: {

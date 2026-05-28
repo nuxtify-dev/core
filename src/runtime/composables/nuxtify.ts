@@ -12,12 +12,6 @@ export const useNuxtifySiteTitle = ({
   const nuxtifyConfig = useNuxtifyConfig()
 
   useHead({
-    titleTemplate: (titleChunk) => {
-      return titleChunk ? `${titleChunk} %separator %siteName` : '%siteName'
-    },
-    templateParams: {
-      siteName: siteName || nuxtifyConfig.brand?.name,
-      separator,
-    },
+    titleTemplate: `%s ${separator} ${siteName || nuxtifyConfig.brand?.name}`,
   })
 }
