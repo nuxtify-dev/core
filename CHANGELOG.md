@@ -1,5 +1,38 @@
 # Changelog
 
+## v0.7.0
+
+[compare changes](https://github.com/nuxtify-dev/core/compare/v0.6.1...v0.7.0)
+
+### 🚀 Enhancements
+
+- **playground:** Add polished demos ([ab7bf33](https://github.com/nuxtify-dev/core/commit/ab7bf33))
+- **dx:** Add types export to package ([dcfc7f3](https://github.com/nuxtify-dev/core/commit/dcfc7f3))
+
+### 🩹 Fixes
+
+- Nested div in span ([05cdaf1](https://github.com/nuxtify-dev/core/commit/05cdaf1))
+- Unhead title template ([b8aa960](https://github.com/nuxtify-dev/core/commit/b8aa960))
+
+### 💅 Refactors
+
+- **playground:** Demo core styles ([d6649b5](https://github.com/nuxtify-dev/core/commit/d6649b5))
+- ⚠️  Dialog button props ([5e44bbe](https://github.com/nuxtify-dev/core/commit/5e44bbe))
+- **dx:** Move module types ([0d4afc0](https://github.com/nuxtify-dev/core/commit/0d4afc0))
+
+### 📖 Documentation
+
+- Change badge version label ([e497d76](https://github.com/nuxtify-dev/core/commit/e497d76))
+
+### 🏡 Chore
+
+- **ci:** Update gh ci workflow ([786a49c](https://github.com/nuxtify-dev/core/commit/786a49c))
+- Simplify stackblitz start command ([d156ae4](https://github.com/nuxtify-dev/core/commit/d156ae4))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Dialog button props ([5e44bbe](https://github.com/nuxtify-dev/core/commit/5e44bbe))
+
 ## v0.6.1
 
 [compare changes](https://github.com/nuxtify-dev/core/compare/v0.6.0...v0.6.1)
