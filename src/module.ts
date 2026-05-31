@@ -11,7 +11,7 @@ import { defu } from 'defu'
 import { name, version } from '../package.json'
 
 // Types
-import type { ModuleOptions } from './types'
+import type { ModuleOptions } from './types/module'
 
 export default defineNuxtModule<ModuleOptions>().with({
   meta: {

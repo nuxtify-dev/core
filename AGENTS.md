@@ -35,7 +35,8 @@ nuxtify-core/
 │       └── demo/
 ├── src/                       # Main module source
 │   ├── module.ts              # Nuxt module definition (entry point)
-│   ├── types.ts               # Module option type definitions (ModuleOptions)
+│   ├── types
+│   │   └── module.ts          # Module option type definitions (ModuleOptions)
 │   └── runtime/               # Code injected into the host Nuxt application
 │       ├── components/        # Auto-imported app components
 │       │   └── app/           # AppAnnouncement, AppDialog, AppError, etc.
@@ -104,7 +105,7 @@ npm run prepack
 
 ---
 
-## Module Configuration (`types.ts`)
+## Module Configuration (`types/module.ts`)
 
 The module can be configured via `nuxtifyCore` options in a host project's `nuxt.config.ts` or directly on `app.config.ts`. The primary configuration parameters include:
 
@@ -123,7 +124,7 @@ The module can be configured via `nuxtifyCore` options in a host project's `nuxt
 When modifying or extending this codebase, adhere to the following conventions:
 
 1. **Composition API & SFCs:** Always write Vue components in `./src/runtime/components` using the modern Composition API with `<script setup lang="ts">`.
-2. **Type Safety:** Ensure any public-facing or internal configurations are properly typed in `src/types.ts`. Run `npm run test:types` before submitting any changes.
+2. **Type Safety:** Ensure any public-facing or internal configurations are properly typed in `src/types/module.ts`. Run `npm run test:types` before submitting any changes.
 3. **Use Direct Imports:** Because this is a Nuxt module, auto-imports do not work. All utilities, components, and composables must explicitly be imported from `#imports`.
 4. **Styling Defaults:** Rely heavily on Vuetify utility classes or Vuetify defaults configurations. Keep Custom CSS to a minimum to ensure consumers can override styles easily.
 5. **Linting Compliance:** Make sure that code meets the ESLint stylistic rules (with v9 flat configurations). Run `npm run lint` regularly to catch formatting and styling discrepancies.
