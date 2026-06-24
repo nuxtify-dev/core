@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.8.0
+
+[compare changes](https://github.com/nuxtify-dev/core/compare/v0.7.0...v0.8.0)
+
+### 🚀 Enhancements
+
+- Add maxLength150 form rule ([2357811](https://github.com/nuxtify-dev/core/commit/2357811))
+
+### 🩹 Fixes
+
+- **deps:** Explicitly require Vuetify 3.x ([a8cf987](https://github.com/nuxtify-dev/core/commit/a8cf987))
+
+### 💅 Refactors
+
+- ⚠️  Rename config policies to routes ([6caf823](https://github.com/nuxtify-dev/core/commit/6caf823))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Rename config policies to routes ([6caf823](https://github.com/nuxtify-dev/core/commit/6caf823))
+
 ## v0.7.0
 
 [compare changes](https://github.com/nuxtify-dev/core/compare/v0.6.1...v0.7.0)
