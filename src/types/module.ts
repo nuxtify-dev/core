@@ -79,9 +79,9 @@ interface BrandOptions {
   }
 }
 
-interface PoliciesOptions {
-  privacyUrl: string
-  termsUrl: string
+interface RoutesOptions {
+  privacy: string
+  terms: string
 }
 
 export interface ModuleOptions {
@@ -96,9 +96,9 @@ export interface ModuleOptions {
   brand?: BrandOptions
 
   /**
-   * Policies options
+   * RoutesOptions options
    */
-  policies?: PoliciesOptions
+  routes?: RoutesOptions
 
   /**
    * Announcement options

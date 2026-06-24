@@ -77,10 +77,10 @@ export default defineNuxtModule<ModuleOptions>().with({
       },
     },
 
-    // Policies
-    policies: {
-      privacyUrl: '/privacy',
-      termsUrl: '/terms',
+    // Routes
+    routes: {
+      privacy: '/privacy',
+      terms: '/terms',
     },
 
     // Announcement
