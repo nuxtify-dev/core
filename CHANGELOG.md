@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.9.0
+
+[compare changes](https://github.com/nuxtify-dev/core/compare/v0.8.0...v0.8.1)
+
+### 💅 Refactors
+
+- ⚠️ Remove blobToDataURL and filenameToUrl utility functions
+- Use shared utils ([2dd9c15](https://github.com/nuxtify-dev/core/commit/2dd9c15))
+
 ## v0.8.0
 
 [compare changes](https://github.com/nuxtify-dev/core/compare/v0.7.0...v0.8.0)
