@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.9.1
+
+[compare changes](https://github.com/nuxtify-dev/core/compare/v0.9.0...v0.9.1)
+
+### 🚀 Enhancements
+
+- Add announcement includes and route wildcard matching ([09ae5da](https://github.com/nuxtify-dev/core/commit/09ae5da))
+
 ## v0.9.0
 
 [compare changes](https://github.com/nuxtify-dev/core/compare/v0.8.0...v0.8.1)
