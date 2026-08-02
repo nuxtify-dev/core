@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, isExternalUrl, useDisplay, useNuxtifyConfig, useRoute } from '#imports'
+import { computed, isExternalUrl, matchRoute, useDisplay, useNuxtifyConfig, useRoute } from '#imports'
 
 // App state
 const nuxtifyConfig = useNuxtifyConfig()
@@ -22,9 +22,19 @@ const shouldShow = computed(() => {
       || (nuxtifyConfig.announcement?.buttonText && nuxtifyConfig.announcement?.buttonUrl)
   if (!hasContent) return false
 
+  const currentPath = route.path
+
+  // Include routes
+  const include: string[] = nuxtifyConfig.announcement?.include || []
+  if (include.length > 0) {
+    const isIncluded = include.some(pattern => matchRoute(pattern, currentPath))
+    if (!isIncluded) return false
+  }
+
   // Exclude routes
   const exclude: string[] = nuxtifyConfig.announcement?.exclude || []
-  return !exclude.includes(route.path)
+  const isExcluded = exclude.some(pattern => matchRoute(pattern, currentPath))
+  return !isExcluded
 })
 </script>
 

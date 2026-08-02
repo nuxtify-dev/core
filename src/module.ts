@@ -91,6 +91,7 @@ export default defineNuxtModule<ModuleOptions>().with({
       chipColor: '',
       buttonText: '',
       buttonUrl: '',
+      include: [] as string[],
       exclude: [] as string[],
     },
 

@@ -118,6 +118,7 @@ export interface ModuleOptions {
     chipColor?: string
     buttonText?: string
     buttonUrl?: string
+    include?: string[]
     exclude?: string[]
   }
 

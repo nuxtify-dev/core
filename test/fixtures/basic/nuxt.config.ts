@@ -9,6 +9,8 @@ export default defineNuxtConfig({
       show: true,
       chipText: 'News',
       message: 'This is a test announcement!',
+      include: ['/blog/**', '/'],
+      exclude: ['/blog/drafts/**'],
     },
   },
 })
