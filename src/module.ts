@@ -139,9 +139,15 @@ export default defineNuxtModule<ModuleOptions>().with({
     addImportsDir(resolve('./runtime/composables'))
     addServerImportsDir(resolve('./runtime/server/composables'))
 
-    // Utils
+    // Utils - App
     addImportsDir(resolve('./runtime/utils'))
+
+    // Utils - Server
     addServerImportsDir(resolve('./runtime/server/utils'))
+
+    // Utils - Shared
+    addImportsDir(resolve('./runtime/shared/utils'))
+    addServerImportsDir(resolve('./runtime/shared/utils'))
 
     // Middleware
     addRouteMiddleware({
