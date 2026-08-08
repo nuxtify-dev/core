@@ -48,7 +48,7 @@
   "dependencies": {
     "@nuxt/image": "^2.0.0",
     "defu": "^6.1.7",
-    "vuetify": "^3.13.0",
+    "vuetify": "^3.13.1",
     "vuetify-nuxt-module": "^0.19.5"
   },
   "devDependencies": {
