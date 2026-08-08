@@ -22,8 +22,7 @@ export default defineAppConfig({
       message: 'This is a site wide announcement!',
       buttonText: 'Click me',
       buttonUrl: 'https://nuxtify.dev/',
-      include: ['/signin'],
-      // exclude: ['/privacy', '/terms'],
+      exclude: ['/signin'],
     },
 
     // Credits
