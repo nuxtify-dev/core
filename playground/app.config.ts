@@ -19,7 +19,7 @@ export default defineAppConfig({
     announcement: {
       show: true,
       chipText: 'News',
-      message: 'This is a site wide announcement!',
+      message: 'This is a site wide announcement for new features.',
       buttonText: 'Click me',
       buttonUrl: 'https://nuxtify.dev/',
       exclude: ['/signin'],

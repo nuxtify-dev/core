@@ -50,13 +50,13 @@ const shouldShow = computed(() => {
       tag="div"
       :color="nuxtifyConfig.announcement?.chipColor || 'secondary'"
       size="small"
-      class="mr-2 font-weight-bold"
+      class="flex-shrink-0 mr-2 font-weight-bold"
     >
       {{ chipText }}
     </v-chip>
     <div
       v-if="nuxtifyConfig.announcement?.message"
-      :class="`${xs ? 'text-subtitle-2' : 'text-subtitle-1'} mr-4`"
+      :class="`${xs ? 'text-subtitle-2' : 'text-subtitle-1'} mr-1 mr-sm-4`"
     >
       {{ nuxtifyConfig.announcement.message }}
     </div>
