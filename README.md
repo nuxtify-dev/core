@@ -20,7 +20,7 @@
 ### Table of Contents
 
 - ♾️ [Why Nuxtify?](#why-nuxtify)
-- 🧩 [Nuxtify Modules](#modules)
+- 🧩 [Modules](#modules)
 - ✨ [Features](#features)
 - 🚀 [Quick Start](#quick-start)
 - 🔧 [Configuration](#configuration)
@@ -31,7 +31,7 @@
 
 ## <a name="why-nuxtify">♾️ Why Nuxtify?</a>
 
-Nuxtify is a collection of [Nuxt modules](https://nuxt.com/docs/guide/concepts/modules) that help you stay organized, maintain focus, and _ship weirdly fast_.
+Nuxtify is a collection of [Nuxt modules](https://nuxt.com/docs/guide/concepts/modules) that help you stay organized, maintain focus, and _ship reliably fast_.
 
 It's built on a loosely opinionated stack that eliminates decision fatigue and ensures consistency across projects. This extensible approach gives you incredible control over your site's structure and style.
 
@@ -53,31 +53,16 @@ In short, Nuxtify helps you build faster, iterate smarter, and maintain consiste
 
 ## <a name="modules">🧩 Modules</a>
 
-### [Nuxtify Core](https://github.com/nuxtify-dev/core) (this module)
+Nuxtify is split into two paths: marketing site modules and SaaS modules. Both paths are built on top of the Nuxtify Core module. You can read more about all the modules [here](https://nuxtify.dev/modules).
 
-Provides the core functionality for Nuxtify, including:
-
-- Default components, composables, and utilities
-- Global configuration and theming with [Vuetify](https://vuetifyjs.com/en/introduction/why-vuetify/)
-
-### [Nuxtify Pages](https://github.com/nuxtify-dev/pages)
-
-Provides single and multi-page website building blocks so you can _ship weirdly fast_.
-
-- Ready to use page components, page templates, and email subscribe form
-- (coming soon) Robots, sitemaps, schema.org, social share images, broken links, and more powered by [Nuxt SEO](https://nuxtseo.com/)
-
-### [Nuxtify App](https://github.com/nuxtify-dev/app)
-
-Provides a single page app (SPA) skeleton for building your next SaaS or AI tool.
-
-- Admin backend powered by [Firebase](https://firebase.google.com/) and [Vuefire](https://vuefire.vuejs.org/)
-- Sign in and sign up pages powered by [Firebase Authentication](https://firebase.google.com/products/auth)
-- User account page, app style navigation, and more...
+- [Nuxtify Core](https://github.com/nuxtify-dev/core) (this module). Provides core, shared functionality for all other modules.
+- [Nuxtify Pages](https://github.com/nuxtify-dev/pages). Provides single and multi-page website building blocks.
+- [Nuxtify CMS](https://github.com/nuxtify-dev/cms). Provides a lightweight, file-based CMS for Nuxt applications. Extends Nuxtify Pages.
+- [Nuxtify App](https://github.com/nuxtify-dev/app). Provides a single page app (SPA) skeleton for building your next SaaS or AI tool.
 
 ## <a name="features">✨ Features</a>
 
-Nuxtify Core builds on the amazing features of [Vue](https://vuejs.org/guide/introduction), [Nuxt](https://nuxt.com/docs/getting-started/introduction), and [Vuetify](https://vuetifyjs.com/en/introduction/why-vuetify/).
+Nuxtify Core builds on the features of [Vue](https://vuejs.org/guide/introduction), [Nuxt](https://nuxt.com/docs/getting-started/introduction), and [Vuetify](https://vuetifyjs.com/en/introduction/why-vuetify/).
 
 ### 💡 Intuitive UI & UX
 
@@ -91,7 +76,7 @@ Nuxtify Core builds on the amazing features of [Vue](https://vuejs.org/guide/int
 - Zero-config with sensible defaults for common use cases
 - All components use the modern [Vue Composition API](https://vuejs.org/guide/extras/composition-api-faq) and [Single File Component (SFC) syntax](https://vuejs.org/guide/scaling-up/sfc.html)
 - [TypeScript](https://www.typescriptlang.org/) auto-complete and type safety for all components
-- [ESLint](https://eslint.org/) support out of the box using flat config (v9)
+- [ESLint](https://eslint.org/) support out of the box using flat config (v9+)
 - Identify performance gaps and seamlessly manage your app with [Nuxt Devtools](https://devtools.nuxt.com/)
 - Clean, elegant code that's easy to understand and customize
 - Loosely opinionated, leveraging ecosystem standards so you're not locked into outdated dependencies and practices
