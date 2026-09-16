@@ -245,16 +245,17 @@ export const getLanguageName = (
   displayLanguage = 'en',
 ) => {
   try {
-    const languageNames = new Intl.DisplayNames([displayLanguage], {
-      type: 'language',
-    })
-    return languageNames.of(languageCode)
+    const languageNames = new Intl.DisplayNames([displayLanguage], { type: 'language' })
+    try {
+      return languageNames.of(languageCode)
+    }
+    catch {
+      // Fall back to root language (e.g., 'en-SCT' -> 'en')
+      const root = languageCode.split(/[-_]/)[0]
+      return root && root !== languageCode ? languageNames.of(root) : languageCode
+    }
   }
-  catch (error) {
-    console.error(
-      `Error getting language name for code '${languageCode}' with locale '${displayLanguage}':`,
-      error,
-    )
+  catch {
     return languageCode // Fallback to the input code if an error occurs
   }
 }
