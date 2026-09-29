@@ -66,5 +66,11 @@
     "typescript": "^5.9.3",
     "vitest": "^3.2.4",
     "vue-tsc": "^3.3.1"
+  },
+  "allowScripts": {
+    "esbuild": true,
+    "sharp": true,
+    "unrs-resolver": true,
+    "@parcel/watcher": true
   }
 }
