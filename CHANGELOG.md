@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.9.2
+
+[compare changes](https://github.com/nuxtify-dev/core/compare/v0.9.1...v0.9.2)
+
+### 🚀 Enhancements
+
+- Update to Nuxt Image [v2.1.0](https://github.com/nuxt/image/releases/tag/v2.1.0)
+
+### 🩹 Fixes
+
+- **ui:** Announcement banner chip on mobile ([dd2554c](https://github.com/nuxtify-dev/core/commit/dd2554c))
+- Gracefully handle unknown language codes ([5b6fab3](https://github.com/nuxtify-dev/core/commit/5b6fab3))
+
+### 📖 Documentation
+
+- Simplify readme module section ([3ebf2a8](https://github.com/nuxtify-dev/core/commit/3ebf2a8))
+
 ## v0.9.1
 
 [compare changes](https://github.com/nuxtify-dev/core/compare/v0.9.0...v0.9.1)
