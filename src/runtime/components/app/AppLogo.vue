@@ -1,52 +1,52 @@
 <script setup lang="ts">
 import { computed, useAppConfig, useDisplay } from '#imports'
 
-// Props
+// PROPS
 const props = withDefaults(defineProps<{
   dark?: boolean
   width?: number
   height?: number
   format?: string
+  fit?: string
 }>(), {
   dark: false,
   format: 'webp',
+  fit: 'contain',
 })
 
-// App state
+// STATE - GLOBAL
 const nuxtifyConfig = useAppConfig().nuxtify
 const { smAndDown } = useDisplay()
 
-// Image URL logic
-// Set default to the light image url
+// Set image URL
 let imageUrl = nuxtifyConfig.brand.logo.lightUrl
-
-// If it's dark theme logo and there's a dark image url, use that
 if (props.dark && nuxtifyConfig.brand.logo.darkUrl) {
   imageUrl = nuxtifyConfig.brand.logo.darkUrl
 }
 
-// Image width logic
-const width = computed(() => {
-  if (props.width) {
-    return props.width
-  }
-  else {
-    return smAndDown.value
-      ? nuxtifyConfig.brand.logo.mobileWidth
-      : nuxtifyConfig.brand.logo.width
-  }
+// Never rasterize SVGs
+const isSvg = computed(() => {
+  return imageUrl?.toLowerCase().endsWith('.svg') || imageUrl?.includes('.svg?')
+})
+const computedFormat = computed(() => {
+  return isSvg.value ? undefined : props.format
 })
 
-// Image height logic
+// Keep width optional so aspect ratio is preserved automatically
+const width = computed(() => {
+  if (props.width) return props.width
+  return smAndDown.value
+    ? nuxtifyConfig.brand.logo.mobileWidth
+    : nuxtifyConfig.brand.logo.width
+})
+
+// Default to sensible header heights if not explicitly provided
 const height = computed(() => {
-  if (props.height) {
-    return props.height
-  }
-  else {
-    return smAndDown.value
-      ? nuxtifyConfig.brand.logo.mobileHeight
-      : nuxtifyConfig.brand.logo.height
-  }
+  if (props.height) return props.height
+  const configHeight = smAndDown.value
+    ? nuxtifyConfig.brand.logo.mobileHeight
+    : nuxtifyConfig.brand.logo.height
+  return configHeight ?? (smAndDown.value ? 32 : 36)
 })
 </script>
 
@@ -55,7 +55,8 @@ const height = computed(() => {
     v-if="imageUrl"
     :width
     :height
-    :format
+    :format="computedFormat"
+    :fit
     :src="imageUrl"
     :alt="`${nuxtifyConfig.brand.name} logo`"
   />
