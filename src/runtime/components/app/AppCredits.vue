@@ -34,13 +34,7 @@ const nuxtifyConfig = useNuxtifyConfig()
       </span>
 
       <!-- Powered by -->
-      <span v-if="nuxtifyConfig.credits.showPoweredBy">
-        <a
-          :href="`https://nuxtify.dev/?utm_source=${nuxtifyConfig.brand?.domain}&utm_medium=referral&utm_campaign=poweredby`"
-          target="_blank"
-          rel="noopener nofollow"
-        >Powered by Nuxtify</a>.
-      </span>
+      <AppPoweredBy v-if="nuxtifyConfig.credits?.showPoweredBy" />
     </small>
   </div>
 </template>
