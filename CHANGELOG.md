@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.9.3
+
+[compare changes](https://github.com/nuxtify-dev/core/compare/v0.9.2...v0.9.3)
+
+### 🩹 Fixes
+
+- Add app logo height defaults and fit prop ([ccb400c](https://github.com/nuxtify-dev/core/commit/ccb400c))
+
+### 💅 Refactors
+
+- Move powered by to standalone component ([ff5ce9c](https://github.com/nuxtify-dev/core/commit/ff5ce9c))
+
 ## v0.9.2
 
 [compare changes](https://github.com/nuxtify-dev/core/compare/v0.9.1...v0.9.2)
