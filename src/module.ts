@@ -15,6 +15,15 @@ import type { ModuleOptions, NavigationItem } from './types/module'
 
 export type { Link, ModuleOptions, NavigationItem, TitledLinks } from './types/module'
 
+declare module '@nuxt/schema' {
+  interface AppConfigInput {
+    nuxtify?: ModuleOptions
+  }
+  interface AppConfig {
+    nuxtify: ModuleOptions
+  }
+}
+
 export default defineNuxtModule<ModuleOptions>().with({
   meta: {
     name,
