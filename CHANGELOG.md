@@ -1,5 +1,31 @@
 # Changelog
 
+## v0.10.0
+
+[compare changes](https://github.com/nuxtify-dev/core/compare/v0.9.3...v0.10.0)
+
+### 🚀 Enhancements
+
+- Add NuxtifyImg component ([89d03d1](https://github.com/nuxtify-dev/core/commit/89d03d1))
+- ⚠️  Titled dropdowns and descriptions in primary nav ([f00493a](https://github.com/nuxtify-dev/core/commit/f00493a))
+
+### 🩹 Fixes
+
+- **types:** Emit runtime module types and augment AppConfig schema ([3bdd752](https://github.com/nuxtify-dev/core/commit/3bdd752))
+
+### 💅 Refactors
+
+- ⚠️  Simplify AppLogo component ([c6d545b](https://github.com/nuxtify-dev/core/commit/c6d545b))
+
+### 🏡 Chore
+
+- Fix npm package errors ([f73637a](https://github.com/nuxtify-dev/core/commit/f73637a))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Titled dropdowns and descriptions in primary nav ([f00493a](https://github.com/nuxtify-dev/core/commit/f00493a))
+- ⚠️  Simplify AppLogo component ([c6d545b](https://github.com/nuxtify-dev/core/commit/c6d545b))
+
 ## v0.9.3
 
 [compare changes](https://github.com/nuxtify-dev/core/compare/v0.9.2...v0.9.3)
