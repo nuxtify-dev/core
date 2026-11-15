@@ -252,6 +252,77 @@ const triggerUpgrade = () => {
               </div>
             </v-card>
           </v-col>
+
+          <!-- NuxtifyImg Component -->
+          <v-col cols="12">
+            <v-card
+              class="pa-6 border"
+              variant="outlined"
+            >
+              <div class="d-flex justify-space-between align-center mb-4">
+                <div>
+                  <h3 class="text-subtitle-1 font-weight-bold">
+                    NuxtifyImg Component
+                  </h3>
+                  <div class="text-caption text-medium-emphasis">
+                    Vuetify <code>v-img</code> wrapper powered by <code>@nuxt/image</code> optimization and responsive <code>srcset</code>
+                  </div>
+                </div>
+                <v-chip
+                  size="small"
+                  color="secondary"
+                  class="ml-auto"
+                >
+                  Media
+                </v-chip>
+              </div>
+
+              <v-row class="mb-2">
+                <v-col
+                  cols="12"
+                  md="6"
+                >
+                  <div class="py-4 px-4 bg-grey-lighten-4 rounded h-100">
+                    <div class="text-caption text-medium-emphasis mb-2 font-weight-bold">
+                      Optimized Image (<code>format="webp"</code>):
+                    </div>
+                    <div class="d-flex justify-center align-center bg-white pa-4 rounded border">
+                      <NuxtifyImg
+                        src="/img/nuxtify-logo-light.png"
+                        alt="Nuxtify light logo"
+                        :width="200"
+                        :height="40"
+                      />
+                    </div>
+                  </div>
+                </v-col>
+
+                <v-col
+                  cols="12"
+                  md="6"
+                >
+                  <div class="py-4 px-4 bg-grey-lighten-4 rounded h-100">
+                    <div class="text-caption text-medium-emphasis mb-2 font-weight-bold">
+                      Linked Image (<code>to="/"</code>):
+                    </div>
+                    <div class="d-flex justify-center align-center bg-grey-darken-4 pa-4 rounded border">
+                      <NuxtifyImg
+                        src="/img/nuxtify-logo-dark.png"
+                        alt="Nuxtify dark logo link"
+                        :width="200"
+                        :height="40"
+                        to="/"
+                      />
+                    </div>
+                  </div>
+                </v-col>
+              </v-row>
+
+              <div class="text-caption text-medium-emphasis">
+                Generates optimized URLs and responsive <code>srcset</code> attributes while preserving SVGs and supporting optional <code>NuxtLink</code> wrapping.
+              </div>
+            </v-card>
+          </v-col>
         </v-row>
       </v-col>
     </v-row>
