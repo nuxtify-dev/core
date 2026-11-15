@@ -41,13 +41,13 @@ const nuxtifyConfig = useNuxtifyConfig()
 
 <style scoped>
 /* Links */
-a {
+:deep(a) {
   color: inherit;
   text-decoration: none;
   justify-content: start;
 }
 .v-btn:hover,
-a:hover {
+:deep(a:hover) {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
