@@ -1,15 +1,18 @@
-interface Link {
+export interface Link {
   text: string
+  description?: string
   to?: string
   href?: string
   icon?: string
   openInNew?: boolean
 }
 
-interface TitledLinks {
+export interface TitledLinks {
   title: string
   links: Link[]
 }
+
+export type NavigationItem = Link | TitledLinks
 
 interface BrandOptions {
   /**
@@ -126,7 +129,7 @@ export interface ModuleOptions {
    * Navigation options
    */
   navigation?: {
-    primary?: Link[]
+    primary?: NavigationItem[]
     secondary?: Link[]
     altPrimary?: TitledLinks[]
     altSecondary?: Link[]

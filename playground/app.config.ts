@@ -25,6 +25,88 @@ export default defineAppConfig({
       exclude: ['/signin'],
     },
 
+    // Navigation
+    navigation: {
+      primary: [
+        {
+          text: 'Pricing',
+          to: '/pricing',
+        },
+        {
+          title: 'Product',
+          links: [
+            {
+              text: 'Core',
+              description: 'Shared state, feedback tools, and branding defaults.',
+              icon: 'mdi-cube-outline',
+              to: '/core',
+            },
+            {
+              text: 'Pages',
+              description: 'Marketing site building blocks and layouts.',
+              icon: 'mdi-file-document-outline',
+              to: '/pages',
+            },
+          ],
+        },
+        {
+          title: 'Why Nuxtify?',
+          links: [
+            {
+              text: 'Showcase',
+              description: 'See production sites built with Nuxtify.',
+              icon: 'mdi-heart-outline',
+              to: '/showcase',
+            },
+            {
+              text: 'Documentation',
+              description: 'Guides, module configuration, and examples.',
+              icon: 'mdi-book-open-outline',
+              href: 'https://nuxtify.dev/docs',
+              openInNew: true,
+            },
+          ],
+        },
+      ],
+      altPrimary: [
+        {
+          title: 'Product',
+          links: [
+            {
+              text: 'Core',
+              description: 'Shared state, feedback tools, and branding defaults.',
+              icon: 'mdi-cube-outline',
+              to: '/core',
+            },
+            {
+              text: 'Pages',
+              description: 'Marketing site building blocks and layouts.',
+              icon: 'mdi-file-document-outline',
+              to: '/pages',
+            },
+          ],
+        },
+        {
+          title: 'Why Nuxtify?',
+          links: [
+            {
+              text: 'Showcase',
+              description: 'See production sites built with Nuxtify.',
+              icon: 'mdi-heart-outline',
+              to: '/showcase',
+            },
+            {
+              text: 'Documentation',
+              description: 'Guides, module configuration, and examples.',
+              icon: 'mdi-book-open-outline',
+              href: 'https://nuxtify.dev/docs',
+              openInNew: true,
+            },
+          ],
+        },
+      ],
+    },
+
     // Credits
     credits: {
       creator: {

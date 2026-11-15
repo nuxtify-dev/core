@@ -11,7 +11,9 @@ import { defu } from 'defu'
 import { name, version } from '../package.json'
 
 // Types
-import type { ModuleOptions } from './types/module'
+import type { ModuleOptions, NavigationItem } from './types/module'
+
+export type { Link, ModuleOptions, NavigationItem, TitledLinks } from './types/module'
 
 export default defineNuxtModule<ModuleOptions>().with({
   meta: {
@@ -97,7 +99,7 @@ export default defineNuxtModule<ModuleOptions>().with({
 
     // Navigation
     navigation: {
-      primary: [],
+      primary: [] as NavigationItem[],
       secondary: [],
       altPrimary: [],
       altSecondary: [],
