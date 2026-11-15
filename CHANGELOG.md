@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.10.1
+
+[compare changes](https://github.com/nuxtify-dev/core/compare/v0.10.0...v0.10.1)
+
+### 🩹 Fixes
+
+- **ui:** Credits link styling ([8cc51cb](https://github.com/nuxtify-dev/core/commit/8cc51cb))
+
 ## v0.10.0
 
 [compare changes](https://github.com/nuxtify-dev/core/compare/v0.9.3...v0.10.0)
